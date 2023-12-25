@@ -8,8 +8,7 @@ private:
     std::string m_str;
 public:
     Convector() = default;
-    std::string Get_val();
-    void toBinary(int num);
+    std::string toBinary(int num);
     ~Convector()=default;
     
 };
@@ -20,8 +19,7 @@ extern "C" {
 
     Convector *Convector_new();
     void Convector_del(Convector *convector);
-    char* Get_val_str(Convector *convector);
-    void toBinary_int(Convector *convector, int num);
+    char* toBinary_int(Convector *convector, int num);
 
 #ifdef __cplusplus
 }
