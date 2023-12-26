@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <string.h>
+#include <map>
 
 class Convector
 {
@@ -10,6 +11,7 @@ public:
     Convector() = default;
     std::string toBinary(int num);
     std::string toOctal(int num);
+    std::string toHex(int num);
     ~Convector()=default;
     
 };
@@ -22,6 +24,7 @@ extern "C" {
     void Convector_del(Convector *convector);
     char* toBinary_int(Convector *convector, int num);
     char* toOctal_int(Convector *convector, int num);
+    char* toHex_int(Convector *convector, int num);
 
 #ifdef __cplusplus
 }
