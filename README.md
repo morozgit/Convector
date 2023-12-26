@@ -53,10 +53,5 @@ g++ -fPIC -shared -o libcon.so Convector.cpp
 ### Запуск ботов
 Из директории с проектом выполните команды.
 ```bush
-python3 tg_bot.py Бот в TG
-python3 vk_bot.py Бот в VK
+python3 main.py
 ```
-
-## Цели проекта
-
-Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).
